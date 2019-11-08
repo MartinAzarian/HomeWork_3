@@ -9,9 +9,9 @@ public class Main
 
 	public static void main (String[]args)
 	{
-		Scanner scan=new Scanner(System.in);
-		int number =scan.nextInt();
-		int k=0;
+		Scanner scan = new Scanner(System.in);
+		int number = scan.nextInt();
+		int k = 0;
 		for(int i = 2; i < number; i++) 
     {
             if(number % i == 0 )
@@ -20,13 +20,13 @@ public class Main
               }
 
      }
-     if(k!=0)
+     if(k != 0)
      {
-              System.out.println(number+" is compound");
+              System.out.println(number + " is compound");
      }
      else
      {
-              System.out.println(number+" prime");
+              System.out.println(number + " prime");
      }
    }
 
