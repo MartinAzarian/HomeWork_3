@@ -8,24 +8,20 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int number = scan.nextInt();
-		int []array=new int[number];
-		for(int i=0; i<=number; i++)
-		{
-			array[i]=i;
-		}
-		int []fibanachi=new int[2*number];
-		for(int i = 0;i <2*number ; i++)
-		{
-			fibanachi[i]=array[i]+array[i+1];
-		}
-		System.out.print(array[0]);
-		for(int i=0; i<2*number;i++)
-		{
-			System.out.println(fibanachi[i]);
+		int inputNumber = scan.nextInt();
+
+		int n0 = 1;
+		int n1 = 1;
+		int n2;
+		System.out.print(n0+" "+n1+" ");
+		for(int i = 3; i <= inputNumber ; i++){
+			n2 = n0 + n1;
+			System.out.print(n2+" ");
+			n0 = n1;
+			n1 = n2;
 		}
 
-		//System.out.println(fibanachi);
 
 	}
 }
+
