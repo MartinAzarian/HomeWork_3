@@ -9,17 +9,34 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int number = scan.nextInt();
-		int []array1=new int[number];
-		Random rand=new Random();
+		int []array1 = new int[number];
+		Random rand = new Random();
+		
 		for(int i = 0; i < number; i++)
-		 {
-		 	int random = rand.nextInt(100);
-		 	array1[i] = random;
-		 }
+		{
+			int random = rand.nextInt(100);
+			array1[i] = random;
+		}
+		
 		int []array2 = new int[number];
+		
 		for(int i = 0; i < number; i++)
 		{
 			array2[i]=array1[i];
+		}
+		
+		System.out.print("array1=");
+		
+		for(int i = 0; i < number; i++)
+		{
+			System.out.print(array1);
+		}
+		
+		System.out.print("array2=");
+		
+		for(int i = 0; i < number; i++)
+		{
+			System.out.print(array2);
 		}
 
 	}
