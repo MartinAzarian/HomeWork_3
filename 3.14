@@ -7,22 +7,22 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-  
+
 		Scanner scan = new Scanner(System.in);
 		int number = scan.nextInt();
-		int []array=new int[number];
-		Random rand=new Random();
-    
+		int []array = new int[number];
+		Random rand = new Random();
+
 		for(int i = 0; i < number; i++)
-		 {
-		 	int random = rand.nextInt();
-		 	array[i]=random;
-		 }
-     
+		{
+			int random = rand.nextInt(100);
+			array[i] = random;
+		}
+
 		for(int i = 0; i < number; i++)
-		 {
+		{
 			System.out.println(array[i]);
-		 }
- 
+		}
+
 	}
 }
