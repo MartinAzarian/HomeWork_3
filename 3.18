@@ -7,29 +7,32 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+
 		Scanner scan = new Scanner(System.in);
 		int number = scan.nextInt();
-		int []array1=new int[number];
+
+		int []array=new int[number];
 		Random rand=new Random();
-		for(int i = 0; i < number; i++)
-		 {
-		 	int random = rand.nextInt();
-		 	array1[i] = random;
-		 }
-		int max=array1[0];
-		int min=array1[0];
+
 		for(int i = 0; i < number; i++)
 		{
-			if(array1[i]<=array1[i+1])
-			{
-				max=array1[i+1];
-				min=array1[i];
+			int random = rand.nextInt(100);
+			array[i] = random;
+			System.out.print(random + " ");
+		}
+		int max = array[0];
+		int min = array[0];
+
+		for(int i = 0; i<array.length; i++){
+			if(max < array[i]) {
+				max = array[i];
 			}
-			else{
-				max=array1[i];
-				min=array1[i+1];
+			if(min > array[i]) {
+				min = array[i];
 			}
 		}
+		System.out.println("Max = "+max);
+		System.out.println("Min = "+min);
 
 	}
 }
