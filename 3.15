@@ -9,29 +9,29 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int number = scan.nextInt();
-		int []array=new int[number];
-		Random rand=new Random();
+		int []array = new int[number];
+		Random rand = new Random();
 		for(int i = 0; i < number; i++)
 		 {
 		 	int random = rand.nextInt(10);
-		 	array[i]=random;
+		 	array[i] = random;
 		 }
-		/*for(int i = number-1; i >= 0; i++)
+		/*for(int i = number - 1; i >= 0; i++)
 		 {
-			System.out.println(array[i]);
+			System.out.println( array[i] );
 		 }*/
-		int []reversearray=new int[number];
+		int []reversearray = new int[number];
 
 		for(int i = 0; i < number; i++)
 		{
-			for(int j=number-1; j>=0;j--)
+			for(int j = number-1; j >= 0;j--)
 			{
-				reversearray[i]=array[j];
+				reversearray[i] = array[j];
 			}
 		}
 		for(int i = 0; i < number; i++)
 		{
-			System.out.println(reversearray[i]);
+			System.out.println( reversearray[i] );
 		}
 
 	}
